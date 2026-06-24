@@ -6,7 +6,7 @@ for (let i = 0; i < gas.length; i++) {
     gas[i].onclick = function () {
         let am = document.querySelectorAll('.gass')[0].value
         let num = this.getAttribute('data-price')
-        if (am === '') {
+        if (am === '' || am > 20) {
             alert('використовуй нормально!')
             return
         }
@@ -16,6 +16,3 @@ for (let i = 0; i < gas.length; i++) {
 
     }
 }
-
-
-
